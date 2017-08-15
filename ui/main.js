@@ -1,7 +1,7 @@
 console.log('Loaded!');
 //change the text of the main-text div
-var element =document.getElementById('main-text');
-element.innerHTML='New Text';
+//var element =document.getElementById('main-text');
+//element.innerHTML='New Text';
 
 var img=document.getElementByID('madi');
 var marginLeft = 0;
