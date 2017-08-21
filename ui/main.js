@@ -28,6 +28,15 @@ button.onclick = function(){
     }
   };
   //Make a request to the counter endpoint
-  request.open('GET', 'http://saheervc.imad.hasura-app.io/counter',true)
+  request.open('GET', 'http://saheervc.imad.hasura-app.io/counter',true);
   request.send(null);
+};
+
+//Submit name 
+var nameInput=document.getElementById('name');
+var name =nameInput.value;
+var submit=document.getElementById('submit_btn');
+submit.onclick=function(){
+  // Make a request to the servver and send the name
+  // capture a list of names and render it as a list
 };
