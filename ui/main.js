@@ -14,7 +14,7 @@
 //}
 var button=document.getElementById('counter');
 button.onclick = function(){
-  //Make a request to the counter endpoint
+  //create a reuest object
   var request = new XMLHttpRequest();
   
   //Capture the response and store it in a variable
@@ -27,5 +27,7 @@ button.onclick = function(){
         }
     }
   };
-  
+  //Make a request to the counter endpoint
+  request.open('GET', 'http://saheervc.imad.hasura-app.io/counter',true)
+  request.send(null);
 };
